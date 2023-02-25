@@ -1,12 +1,12 @@
-package com.cihatguven.dbrouting.school.manager;
+package com.cihatguven.dbrouting.master.school.manager;
 
-import com.cihatguven.dbrouting.school.controller.requests.SaveSchoolRequest;
-import com.cihatguven.dbrouting.school.controller.requests.UpdateSchoolRequest;
+import com.cihatguven.dbrouting.master.school.controller.requests.SaveSchoolRequest;
+import com.cihatguven.dbrouting.master.school.controller.requests.UpdateSchoolRequest;
+import com.cihatguven.dbrouting.master.school.entity.School;
+import com.cihatguven.dbrouting.master.school.repository.SchoolRepository;
 import com.cihatguven.dbrouting.school.database.DataSourceRouting;
 import com.cihatguven.dbrouting.school.database.DbSettings;
 import com.cihatguven.dbrouting.school.database.SchoolDbInitializer;
-import com.cihatguven.dbrouting.school.entity.School;
-import com.cihatguven.dbrouting.school.repository.SchoolRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

@@ -1,9 +1,9 @@
-package com.cihatguven.dbrouting.school.controller;
+package com.cihatguven.dbrouting.master.school.controller;
 
-import com.cihatguven.dbrouting.school.controller.requests.SaveSchoolRequest;
-import com.cihatguven.dbrouting.school.controller.requests.UpdateSchoolRequest;
-import com.cihatguven.dbrouting.school.entity.School;
-import com.cihatguven.dbrouting.school.manager.SchoolManager;
+import com.cihatguven.dbrouting.master.school.controller.requests.SaveSchoolRequest;
+import com.cihatguven.dbrouting.master.school.controller.requests.UpdateSchoolRequest;
+import com.cihatguven.dbrouting.master.school.entity.School;
+import com.cihatguven.dbrouting.master.school.manager.SchoolManager;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -18,11 +18,6 @@ public class SchoolController {
     @PostMapping("/create")
     public ResponseEntity<School> insertSchool(@RequestBody SaveSchoolRequest request) {
         return ResponseEntity.ok(schoolManager.createSchool(request));
-    }
-
-    @PostMapping("/{schoolId}/create_database")
-    public void createDatabase(@PathVariable String schoolId) {
-        schoolManager.createSchoolDatabase(schoolId);
     }
 
     @PutMapping("/{schoolId}/update")

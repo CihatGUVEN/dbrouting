@@ -1,4 +1,4 @@
-package com.cihatguven.dbrouting.school.controller.requests;
+package com.cihatguven.dbrouting.master.school.controller.requests;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,8 +9,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class SaveSchoolRequest {
-    String dbName;
+public class UpdateSchoolRequest {
     String code;
     String title;
 }

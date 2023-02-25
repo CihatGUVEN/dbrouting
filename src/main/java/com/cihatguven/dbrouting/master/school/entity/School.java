@@ -1,7 +1,7 @@
-package com.cihatguven.dbrouting.school.entity;
+package com.cihatguven.dbrouting.master.school.entity;
 
-import com.cihatguven.dbrouting.school.controller.requests.SaveSchoolRequest;
-import com.cihatguven.dbrouting.school.controller.requests.UpdateSchoolRequest;
+import com.cihatguven.dbrouting.master.school.controller.requests.SaveSchoolRequest;
+import com.cihatguven.dbrouting.master.school.controller.requests.UpdateSchoolRequest;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;

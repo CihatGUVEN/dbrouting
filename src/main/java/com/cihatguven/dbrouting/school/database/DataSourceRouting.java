@@ -1,6 +1,6 @@
 package com.cihatguven.dbrouting.school.database;
 
-import com.cihatguven.dbrouting.school.entity.School;
+import com.cihatguven.dbrouting.master.school.entity.School;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.jdbc.datasource.AbstractDataSource;
@@ -46,7 +46,7 @@ public class DataSourceRouting extends AbstractDataSource {
     }
 
     public void setDbName(String dbName) {
-        this.dbName = dbName;
+        this.dbName = dbSettings.getDbNamePrefix().concat(dbName);
     }
 
     public static void execute(School school) {
